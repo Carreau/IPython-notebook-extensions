@@ -10,7 +10,12 @@ function loadCss(url) {
 
 define(["require"], function(require) {
     var cssUrl = require.toUrl("./main.css");
-    loadCss(cssUrl);
+    var pcssUrl = require.toUrl("../pstyle.css");
+    try{
+        loadCss(cssUrl);
+        loadCss(pcssUrl);
+    } catch (e) {
+    }
 });
 
 

@@ -113,21 +113,21 @@ var IPython = (function (IPython) {
 
             // function that will be called if you press tab 1, 2, 3... times in a row
             this.tabs_functions = [ 
-            function() { that.gen_clippy_text('Hello EuroSciPy, long time no See !?');}, 
-            function() { that.gen_clippy_text('How can I be of any help ?');}, 
-            function() { that.gen_clippy_text("I do not understand [object](<tab> would you like to search for help ?");}, 
-            function() { that.gen_clippy_text('Hum, let me consult microsoft knowledge database... <this might take a while>');}, 
-            function() { that.gen_clippy_text('Ok, a real tip');}, 
-            function() { that.gen_clippy_text(
-                    'Did you considered using `goto main_sub3` ?',
-                    'black',
-                    '/static/custom/clippytip/goto.png'
-                    );}, 
-            function() { that.gen_clippy_text(
-                    'or tried to `import this` ?',
-                    'black',
-                    '/static/custom/clippytip/soul.png'
-                    );}, 
+            function() { that.gen_clippy_text('Hello EuroSciPy, long time no see !?');}, 
+            function() { that.gen_clippy_text("I'll be Guiding you on how to use tooltip :-) when you are ready press <tab> again ");}, 
+            function() { that.gen_clippy_text("If you open an open bracket and don't type for too long I'll come to help you automatically.");}, 
+            function() { that.gen_clippy_text("And each subsequent press of tab will have a different action");}, 
+            // function() { that.gen_clippy_text('Ok, a real tip');}, 
+            // function() { that.gen_clippy_text(
+            //         'Did you considered using `goto main_sub3` ?',
+            //         'black',
+            //         '/static/custom/clippytip/goto.png'
+            //         );}, 
+            // function() { that.gen_clippy_text(
+            //         'or tried to `import this` ?',
+            //         'black',
+            //         '/static/custom/clippytip/soul.png'
+            //         );}, 
             function (cell, text) {
                 that._request_tooltip(cell, text);
             }, function () {
